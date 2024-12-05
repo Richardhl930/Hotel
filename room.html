@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(image/background.jpg);
+
+}
+
+.packages-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.package {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.package-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.details li span {
+    color: #8bc34a;
+    margin-right: 5px;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn.primary {
+    background-color: #8bc34a;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <header class="header">
+        <div>
+         <img src="image/logo.png"  >
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="menu.html">Dining</a></li>
+                <li>
+                    <a href="#" style="color: #ff6347;">Rooms</a>
+                    <div class="dropdown">
+                        <div class="dropdown">
+                        <a href="room.html">Single Room</a>
+                        <a href="#Double">Double Room</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Contact & Support</a>
+                    <div class="drop">
+                        <a href="about.html">About us</a>
+                        <a href="location.html">Location and contact</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="packages-container">
+        <div class="package">
+            <img src="image/room1.jpg" alt="Beyrouth" class="package-img">
+            <div class="package-info">
+                <ul class="details">
+                    <li><span>📍</span> Beyrouth</li>
+                    <li><span>📅</span> 3 days</li>
+                    <li><span>👥</span> 2 Person</li>
+                    <li><span>📶</span>free wifi</li>
+                </ul>
+                <h3 class="price">$149.00</h3>
+                <p class="description">
+                    A cozy retreat for couples or two travelers, featuring a modern design with all essentials for a comfortable stay. Perfect for a short getaway.
+                </p>
+                <div class="buttons">
+                    <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="package">
+            <img src="image/room2.jpg"  class="package-img">
+            <div class="package-info">
+                <ul class="details">
+                    <li><span>📍</span> Beyrouth</li>
+                    <li><span>📅</span> 3 days</li>
+                    <li><span>👥</span> 2 Person</li>
+                    <li><span>📶</span>free wifi</li>
+                </ul>
+                <h3 class="price">$179.00</h3>
+                <p class="description">
+                    A charming and affordable option for two, blending simplicity with elegance. Ideal for budget-conscious travelers.
+                </p>
+                <div class="buttons">
+                    
+                    <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="package">
+            <img src="image/room3.jpg" class="package-img">
+            <div class="package-info">
+                <ul class="details">
+                    <li><span>📍</span> Beyrouth</li>
+                    <li><span>📅</span> 3 days</li>
+                    <li><span>👥</span> 1 Person</li>
+                    <li><span>📶</span>free wifi</li>
+                </ul>
+                <h3 class="price">$249.00</h3>
+                <p class="description">
+                    Designed for solo travelers seeking luxury and comfort, this room offers premium amenities and a peaceful atmosphere.
+                </p>
+                <div class="buttons">
+                    
+                    <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="package">
+          <img src="image/room4.jpg" alt="Beyrouth" class="package-img">
+          <div class="package-info">
+              <ul class="details">
+                  <li><span>📍</span> Beyrouth</li>
+                  <li><span>📅</span> 3 days</li>
+                  <li><span>👥</span> 1 Person</li>
+                  <li><span>📶</span>free wifi</li>
+              </ul>
+              <h3 class="price">$180.00</h3>
+              <p class="description">
+                A compact yet stylish room for individuals, perfect for business trips or solo leisure travelers.
+
+
+              </p>
+              <div class="buttons">
+                  
+                  <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+              </div>
+          </div>
+      </div>
+      <div class="package">
+        <img src="image/room5.jpg" alt="Beyrouth" class="package-img">
+        <div class="package-info">
+            <ul class="details">
+                <li><span>📍</span> Beyrouth</li>
+                <li><span>📅</span> 3 days</li>
+                <li><span>👥</span> 1 Person</li>
+                <li><span>📶</span>free wifi</li>
+            </ul>
+            <h3 class="price">$159.00</h3>
+            <p class="description">
+                A practical and comfortable single room with modern amenities, ensuring a relaxing stay for solo visitors.
+
+
+            </p>
+            <div class="buttons">
+                
+                <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="package">
+      <img src="image/room6.jpg" alt="Beyrouth" class="package-img">
+      <div class="package-info">
+          <ul class="details">
+              <li><span>📍</span> Beyrouth</li>
+              <li><span>📅</span> 3 days</li>
+              <li><span>👥</span> 3 Person</li>
+              <li><span>📶</span>free wifi</li>
+          </ul>
+          <h3 class="price">$249.00</h3>
+          <p class="description">
+            A spacious option for small groups or families, combining convenience and style for a memorable stay.
+          </p>
+          <div class="buttons">
+              
+              <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+          </div>
+      </div>
+  </div>
+  <div class="package">
+    <img src="image/room7.jpg" alt="Beyrouth" class="package-img">
+    <div class="package-info">
+        <ul class="details">
+            <li><span>📍</span> Beyrouth</li>
+            <li><span>📅</span> 3 days</li>
+            <li><span>👥</span> 2 Person</li>
+            <li><span>📶</span>free wifi</li>
+        </ul>
+        <h3 class="price">$350.00</h3>
+        <p class="description">
+            A versatile room for couples or friends, offering comfort and functionality for a rejuvenating retreat.
+        </p>
+        <div class="buttons">
+            
+            <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+        </div>
+    </div>
+</div>
+<div class="package">
+  <img src="image/room8.jpg" alt="Beyrouth" class="package-img">
+  <div class="package-info">
+      <ul class="details">
+          <li><span>📍</span> Beyrouth</li>
+          <li><span>📅</span> 3 days</li>
+          <li><span>👥</span> 3 Person</li>
+          <li><span>📶</span>free wifi</li>
+      </ul>
+      <h3 class="price">$449.00</h3>
+      <p class="description">
+        Ideal for trios, this room features a spacious layout with thoughtful amenities, ensuring a delightful group experience.
+      </p>
+      <div class="buttons">
+          
+          <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+      </div>
+  </div>
+</div>
+ </section>
+ <div id="Double"><h1>Double Room</h1></div>
+ <section class="packages-container">
+ <div  class="package">
+    <img src="image/room9.jpg" alt="Beyrouth" class="package-img">
+    <div class="package-info">
+        <ul class="details">
+            <li><span>📍</span> Beyrouth</li>
+            <li><span>📅</span> 3 days</li>
+            <li><span>👥</span> 4 Person</li>
+            <li><span>📶</span>free wifi</li>
+        </ul>
+        <h3 class="price">$510.00</h3>
+        <p class="description">
+            Perfect for small families or groups, this double room offers ample space and comfort for everyone.
+
+
+        </p>
+        <div class="buttons">
+            
+            <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+        </div>
+    </div>
+  </div>
+  <div class="package">
+    <img src="image/room10.jpg" alt="Beyrouth" class="package-img">
+    <div class="package-info">
+        <ul class="details">
+            <li><span>📍</span> Beyrouth</li>
+            <li><span>📅</span> 3 days</li>
+            <li><span>👥</span> 4 Person</li>
+            <li><span>📶</span>free wifi</li>
+        </ul>
+        <h3 class="price">$410.00</h3>
+        <p class="description">
+            A cozy and elegant room designed for groups, ensuring a seamless blend of relaxation and togetherness.
+        </p>
+        <div class="buttons">
+            
+            <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+        </div>
+    </div>
+  </div>
+  <div class="package">
+    <img src="image/room11.jpg" alt="Beyrouth" class="package-img">
+    <div class="package-info">
+        <ul class="details">
+            <li><span>📍</span> Beyrouth</li>
+            <li><span>📅</span> 3 days</li>
+            <li><span>👥</span> 2 Person</li>
+            <li><span>📶</span>free wifi</li>
+        </ul>
+        <h3 class="price">$310.00</h3>
+        <p class="description">
+            Tailored for couples or close companions, this double room offers an intimate setting with a touch of luxury.
+        </p>
+        <div class="buttons">
+            
+            <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+        </div>
+    </div>
+  </div>
+  <div class="package">
+    <img src="image/room12.jpg" alt="Beyrouth" class="package-img">
+    <div class="package-info">
+        <ul class="details">
+            <li><span>📍</span> Beyrouth</li>
+            <li><span>📅</span> 3 days</li>
+            <li><span>👥</span> 6 Person</li>
+            <li><span>📶</span>free wifi</li>
+        </ul>
+        <h3 class="price">$489.00</h3>
+        <p class="description">
+          A spacious double room for larger families or groups, equipped with multiple beds for a hassle-free stay.
+        </p>
+        <div class="buttons">
+            
+            <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+        </div>
+    </div>
+  </div>
+  <div  class="package">
+    <img src="image/room13.jpeg" alt="Beyrouth" class="package-img">
+    <div class="package-info">
+        <ul class="details">
+            <li><span>📍</span> Beyrouth</li>
+            <li><span>📅</span> 3 days</li>
+            <li><span>👥</span> 6 Person</li>
+            <li><span>📶</span>free wifi</li>
+        </ul>
+        <h3 class="price">$410.00</h3>
+        <p class="description">
+            Premium accommodations for larger groups, featuring upscale interiors and first-class amenities.
+        </p>
+        <div class="buttons">
+            
+            <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+        </div>
+    </div>
+  </div>
+  <div class="package">
+    <img src="image/room14.png" alt="Beyrouth" class="package-img">
+    <div class="package-info">
+        <ul class="details">
+            <li><span>📍</span> Beyrouth</li>
+            <li><span>📅</span> 3 days</li>
+            <li><span>👥</span> 4 Person</li>
+            <li><span>📶</span>free wifi</li>
+        </ul>
+        <h3 class="price">$399.00</h3>
+        <p class="description">
+            Designed for families or group travelers, this room strikes the perfect balance between comfort and practicality.
+
+
+        </p>
+        <div class="buttons">
+            
+            <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+        </div>
+    </div>
+  </div>
+  <div class="package">
+    <img src="image/room15.jpg" alt="Beyrouth" class="package-img">
+    <div class="package-info">
+        <ul class="details">
+            <li><span>📍</span> Beyrouth</li>
+            <li><span>📅</span> 3 days</li>
+            <li><span>👥</span> 5 Person</li>
+            <li><span>📶</span>free wifi</li>
+        </ul>
+        <h3 class="price">$540.00</h3>
+        <p class="description">
+            A unique space for mid-sized groups, offering a harmonious mix of luxury and affordability.
+        </p>
+        <div class="buttons">
+            
+            <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+        </div>
+    </div>
+  </div>
+  <div class="package">
+    <img src="image/room16.jpg" class="package-img">
+    <div class="package-info">
+        <ul class="details">
+            <li><span>📍</span> Beyrouth</li>
+            <li><span>📅</span> 3 days</li>
+            <li><span>👥</span> 5 Person</li>
+            <li><span>📶</span>free wifi</li>
+        </ul>
+        <h3 class="price">$499.00</h3>
+        <p class="description"> 
+            Perfect for group travelers, this room is equipped with all necessary features for a seamless and enjoyable stay.
+        </p>
+        <div class="buttons">
+            
+            <button onclick="document.location='account.html'" class="btn primary">Book Now</button>
+        </div>
+    </div>
+  </div>
+</section>
+    <footer>
+        <p>&copy; 2024 Richard Hotels. All rights reserved.</p>
+        <p>Follow us on social media</p>
+        <div class="social">
+            <a href="https://www.instagram.com/">
+                <img src="image/insta.png" >
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="image/facebook (1).png">
+            </a>
+            <a href="https://x.com/">
+                <img src="image/twitter.png" >
+            </a>
+            <a href="https://www.tiktok.com/">
+                <img src="image/tik-tok.png" >
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Company Overview</title>
+    <style>
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('image/menu.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed; 
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-bottom: 1px solid #ff0303;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            color: #ffffff;
+            padding: 12px 15px;
+            text-align: left;
+            font-size: 16px;
+            border-bottom: 1px solid #ff0303;
+        }
+
+        td {
+            padding: 12px 15px;
+            color: #ffffff;
+            border-bottom: 1px solid #ff0303;
+            font-size: 14px;
+        } 
+
+        a:hover {
+            color: #ff6347;
+        }
+
+        h2 {
+            color: #ff0303;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .im {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            table, th, td {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            header, footer {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+         <img src="image/logo.png"  style="height: 110px;width: 200px;">
+         <img src="image/bar.jpg" style="height: 110px;width: 200px;">
+         <img src="image/food1.jpg" style="height: 110px;width: 200px;">
+         <img src="image/food2.jpg" style="height: 110px; width: 200px;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="menu.html" style="color: #ff6347;">Dining</a></li>
+                <li>
+                    <a href="#">Rooms</a>
+                    <div class="dropdown">
+                        <a href="room.html">Single Room</a>
+                        <a href="room.html#Double">Double room</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Contact & Support</a>
+                    <div class="drop">
+                        <a href="about.html">About us</a>
+                        <a href="location.html">Location and contact</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="menu-container">
+            <h2>Hotel Restaurant Menu</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <!-- Appetizers -->
+                <tr>
+                    <td colspan="3" style="font-weight: bold; text-align: left; background-color: #e50000;">Appetizers</td>
+                </tr>
+                <tr><td>Bruschetta</td><td>Grilled bread with tomato, garlic, and basil.</td><td>$8.00</td></tr>
+                <tr><td>Hummus</td><td>Smooth chickpea dip with olive oil and pita bread.</td><td>$7.00</td></tr>
+                <tr><td>Stuffed Mushrooms</td><td>Mushrooms stuffed with cheese and herbs.</td><td>$10.00</td></tr>
+                <tr><td>Garlic Bread</td><td>Toasted bread topped with garlic butter.</td><td>$6.00</td></tr>
+                <tr><td>Tabbouleh</td><td>Lebanese parsley salad with bulgur, tomato, and lemon.</td><td>$9.00</td></tr>
+                <tr><td>Falafel</td><td>Crispy chickpea fritters served with tahini sauce.</td><td>$8.00</td></tr>
+                <tr><td>Spinach Fatayer</td><td>Lebanese pastry stuffed with spinach and spices.</td><td>$7.50</td></tr>
+                <tr><td>Baba Ghanoush</td><td>Smoky eggplant dip with tahini and lemon.</td><td>$7.50</td></tr>
+                <tr><td>Caprese Salad</td><td>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.</td><td>$10.00</td></tr>
+                <tr><td>Chicken Wings</td><td>Spicy, BBQ, or honey mustard-flavored wings.</td><td>$12.00</td></tr>
+                <tr><td>Grape Leaves</td><td>Stuffed with rice, tomatoes, and herbs.</td><td>$8.50</td></tr>
+                <tr><td>Calamari</td><td>Lightly battered and fried squid rings.</td><td>$11.00</td></tr>
+                <tr><td>Mini Meat Pies</td><td>Pastry filled with spiced ground beef.</td><td>$9.00</td></tr>
+                <tr><td>Samosas</td><td>Fried pastries filled with vegetables or meat.</td><td>$7.50</td></tr>
+                <tr><td>Halloumi Fries</td><td>Fried halloumi cheese sticks served with a dip.</td><td>$9.50</td></tr>
+                <tr><td>Nachos</td><td>Topped with cheese, jalapeños, and salsa.</td><td>$10.50</td></tr>
+                <tr><td>Fried Kibbeh</td><td>Crispy shells stuffed with spiced lamb and onions.</td><td>$8.50</td></tr>
+                <tr><td>Potato Wedges</td><td>Seasoned and served with a creamy dip.</td><td>$6.50</td></tr>
+                <tr><td>Stuffed Grape Leaves</td><td>Filled with rice, pine nuts, and spices.</td><td>$7.00</td></tr>
+                <tr><td>Crispy Spring Rolls</td><td>Filled with vegetables or shrimp.</td><td>$8.00</td></tr>
+                <tr><td>Shrimp Cocktail</td><td>Served with tangy cocktail sauce.</td><td>$12.00</td></tr>
+                <tr><td>Grilled Vegetables</td><td>Served with a balsamic glaze.</td><td>$9.00</td></tr>
+                <tr><td>Sweet Potato Fries</td><td>Crispy and lightly seasoned.</td><td>$6.50</td></tr>
+                <tr><td>Crab Cakes</td><td>Served with a lemon aioli.</td><td>$14.00</td></tr>
+    
+                <!-- Main Courses -->
+                <tr>
+                    <td colspan="3" style="font-weight: bold; text-align: left; background-color: #ef0000;">Main Courses</td>
+                </tr>
+                <tr><td>Grilled Salmon</td><td>Served with a lemon butter sauce and seasonal vegetables.</td><td>$22.00</td></tr>
+                <tr><td>Ribeye Steak</td><td>Juicy ribeye steak grilled to perfection, with mashed potatoes.</td><td>$28.00</td></tr>
+                <tr><td>Chicken Shawarma</td><td>Marinated chicken strips served with garlic sauce and pita bread.</td><td>$15.00</td></tr>
+                <tr><td>Lamb Kofta</td><td>Seasoned lamb skewers served with rice and grilled vegetables.</td><td>$18.00</td></tr>
+                <tr><td>Vegetarian Moussaka</td><td>Baked eggplant dish with tomato, onion, and spices.</td><td>$14.00</td></tr>
+                <tr><td>Beef Kebab</td><td>Char-grilled beef kebabs served with hummus and rice.</td><td>$20.00</td></tr>
+                <tr><td>Seafood Paella</td><td>Spanish rice dish with shrimp, mussels, and saffron.</td><td>$24.00</td></tr>
+                <tr><td>Lasagna</td><td>Classic Italian lasagna with layers of beef and cheese.</td><td>$16.00</td></tr>
+                <tr><td>Chicken Alfredo</td><td>Pasta with creamy Alfredo sauce and grilled chicken.</td><td>$18.00</td></tr>
+                <tr><td>Shish Taouk</td><td>Grilled chicken skewers served with garlic sauce.</td><td>$17.00</td></tr>
+                <tr><td>Fish & Chips</td><td>Battered fish fillet served with fries and tartar sauce.</td><td>$14.50</td></tr>
+                <tr><td>Chicken Parmesan</td><td>Breaded chicken topped with marinara and cheese.</td><td>$16.50</td></tr>
+                <tr><td>Mixed Grill Platter</td><td>Selection of chicken, lamb, and beef skewers.</td><td>$25.00</td></tr>
+                <tr><td>Vegetable Stir Fry</td><td>Fresh veggies sautéed in a savory sauce.</td><td>$13.50</td></tr>
+                <tr><td>Quinoa Bowl</td><td>Served with roasted veggies and a tangy dressing.</td><td>$14.00</td></tr>
+                <tr><td>Butter Chicken</td><td>Indian-style chicken curry served with naan bread.</td><td>$18.00</td></tr>
+                <tr><td>Shrimp Scampi</td><td>Sautéed shrimp in garlic butter with pasta.</td><td>$20.00</td></tr>
+                <tr><td>Eggplant Rollatini</td><td>Stuffed with ricotta cheese and baked in marinara.</td><td>$16.00</td></tr>
+                <tr><td>Grilled Lamb Chops</td><td>Served with mint yogurt sauce.</td><td>$26.00</td></tr>
+                <tr><td>Chicken Fajitas</td><td>Served sizzling with tortillas and toppings.</td><td>$18.00</td></tr>
+                <tr><td>Vegetable Curry</td><td>Mixed veggies in a coconut curry sauce.</td><td>$15.00</td></tr>
+                <tr><td>Beef Stroganoff</td><td>Served over buttered noodles.</td><td>$17.00</td></tr>
+                <tr><td>Cheeseburger</td><td>With fries and a side of coleslaw.</td><td>$14.00</td></tr>
+                <tr><td>Shepherd's Pie</td><td>Classic lamb and vegetable casserole topped with mashed potatoes.</td><td>$14.00</td></tr>
+                <tr><td>Chili Con Carne</td><td>Hearty chili served with rice and sour cream.</td><td>$13.50</td></tr>
+    <!-- Desserts -->
+       <tr>
+       <td colspan="3" style="font-weight: bold; text-align: left; background-color: #ff0000;">Desserts</td>
+</tr>
+<tr><td>Cheesecake</td><td>Classic cheesecake with a graham cracker crust.</td><td>$7.00</td></tr>
+<tr><td>Chocolate Lava Cake</td><td>Warm chocolate cake with a molten center.</td><td>$8.50</td></tr>
+<tr><td>Tiramisu</td><td>Italian dessert with layers of coffee-soaked ladyfingers and mascarpone.</td><td>$7.50</td></tr>
+<tr><td>Baklava</td><td>Rich pastry with layers of phyllo, nuts, and honey syrup.</td><td>$6.50</td></tr>
+<tr><td>Crème Brûlée</td><td>Custard topped with caramelized sugar.</td><td>$8.00</td></tr>
+<tr><td>Fruit Tart</td><td>Pastry crust filled with custard and topped with fresh fruits.</td><td>$6.50</td></tr>
+<tr><td>Panna Cotta</td><td>Silky Italian cream dessert with berry compote.</td><td>$7.50</td></tr>
+<tr><td>Ice Cream Sundae</td><td>Ice cream topped with chocolate sauce, nuts, and cherries.</td><td>$5.00</td></tr>
+<tr><td>Apple Pie</td><td>Warm pie served with a scoop of vanilla ice cream.</td><td>$6.50</td></tr>
+<tr><td>Carrot Cake</td><td>Moist cake with cream cheese frosting.</td><td>$6.50</td></tr>
+<tr><td>Chocolate Mousse</td><td>Rich and creamy chocolate dessert.</td><td>$6.00</td></tr>
+<tr><td>Macarons</td><td>Delicate French cookies in assorted flavors.</td><td>$7.50</td></tr>
+<tr><td>Strawberry Shortcake</td><td>Fluffy cake layered with strawberries and whipped cream.</td><td>$7.00</td></tr>
+<tr><td>Churros</td><td>Fried dough dusted with cinnamon sugar and served with chocolate sauce.</td><td>$5.50</td></tr>
+<tr><td>Rice Pudding</td><td>Creamy rice dessert topped with cinnamon.</td><td>$5.00</td></tr>
+<tr><td>Eclairs</td><td>Pastry filled with cream and topped with chocolate glaze.</td><td>$6.00</td></tr>
+<tr><td>Lemon Tart</td><td>Tart and tangy lemon curd in a buttery crust.</td><td>$6.50</td></tr>
+<tr><td>Profiteroles</td><td>Choux pastry filled with cream and drizzled with chocolate.</td><td>$7.00</td></tr>
+<tr><td>Brownies</td><td>Rich chocolate brownies served with ice cream.</td><td>$6.00</td></tr>
+<tr><td>Custard Flan</td><td>Sweet custard dessert with caramel sauce.</td><td>$6.50</td></tr>
+<tr><td>Molten Lava Brownie</td><td>Warm brownie with a gooey chocolate center.</td><td>$8.00</td></tr>
+<tr><td>Tropical Fruit Salad</td><td>Mix of fresh seasonal fruits.</td><td>$5.50</td></tr>
+<tr><td>Banoffee Pie</td><td>Banana, toffee, and cream pie.</td><td>$7.00</td></tr>
+<tr><td>Pavlova</td><td>Light meringue dessert topped with whipped cream and fruit.</td><td>$8.00</td></tr>
+
+<!-- Beverages -->
+<tr>
+    <td colspan="3" style="font-weight: bold; text-align: left; background-color: #ff0000;">Beverages</td>
+</tr>
+<tr><td>Fresh Orange Juice</td><td>Freshly squeezed orange juice.</td><td>$4.00</td></tr>
+<tr><td>Iced Coffee</td><td>Chilled coffee with milk and ice.</td><td>$5.00</td></tr>
+<tr><td>Espresso</td><td>Rich and bold single shot of espresso.</td><td>$3.00</td></tr>
+<tr><td>Latte</td><td>Espresso with steamed milk and foam.</td><td>$4.50</td></tr>
+<tr><td>Cappuccino</td><td>Espresso with steamed milk and a frothy top.</td><td>$4.50</td></tr>
+ <tr><td>Hot Chocolate</td><td>Rich and creamy hot cocoa with whipped cream.</td><td>$4.50</td></tr>
+ <tr><td>Mint Lemonade</td><td>Fresh lemonade with a touch of mint.</td><td>$4.00</td></tr>
+ <tr><td>Green Tea</td><td>Refreshing and soothing green tea.</td><td>$3.50</td></tr>
+ <tr><td>Chai Latte</td><td>Spiced tea with steamed milk.</td><td>$4.50</td></tr>
+ <tr><td>Sparkling Water</td><td>Carbonated mineral water.</td><td>$2.50</td></tr>
+ <tr><td>Smoothies</td><td>Assorted fruit smoothies.</td><td>$5.00</td></tr>
+ <tr><td>Milkshake</td><td>Chocolate, vanilla, or strawberry milkshake.</td><td>$5.50</td></tr>
+ <tr><td>Energy Drink</td><td>Caffeinated energy beverage.</td><td>$4.00</td></tr>
+ <tr><td>Mango Juice</td><td>Sweet and refreshing mango drink.</td><td>$4.50</td></tr>
+ <tr><td>Pineapple Juice</td><td>Fresh pineapple juice.</td><td>$4.50</td></tr>
+ <tr><td>Sangria</td><td>Refreshing wine with fruit pieces.</td><td>$6.00</td></tr>
+ <tr><td>Mojito (Non-Alcoholic)</td><td>Mint, lime, and soda mocktail.</td><td>$5.00</td></tr>
+ <tr><td>Herbal Tea</td><td>Various herbal infusions.</td><td>$3.50</td></tr>
+ <tr><td>Black Coffee</td><td>Freshly brewed black coffee.</td><td>$3.00</td></tr>
+ <tr><td>Cold Brew</td><td>Chilled slow-brewed coffee.</td><td>$4.50</td></tr>
+ <tr><td>Iced Tea</td><td>Chilled black tea with lemon.</td><td>$3.50</td></tr>
+ <tr><td>Hot Tea</td><td>Classic black tea served hot.</td><td>$2.50</td></tr>
+ <tr><td>Coconut Water</td><td>Natural and hydrating coconut water.</td><td>$4.00</td></tr>
+ <tr><td>Apple Juice</td><td>Pure and fresh apple juice.</td><td>$4.00</td></tr>
+ <tr><td>Strawberry Lemonade</td><td>Lemonade with fresh strawberry puree.</td><td>$4.50</td></tr>
+  <tr><td>Classic Milk Tea</td><td>Sweet milk-infused black tea.</td><td>$3.50</td></tr>
+</table>
+</div>
+</section>
+  <footer>
+    <p>&copy; 2024 Richard Hotels. All rights reserved.</p>
+    <p>Follow us on social media</p>
+    <div class="social img">
+        <a href="https://www.instagram.com/">
+            <img src="image/insta.png" >
+        </a>
+        <a href="https://www.facebook.com/">
+            <img src="image/facebook (1).png" >
+        </a>
+        <a href="https://x.com/__x">
+            <img src="image/twitter.png" >
+        </a>
+        <a href="https://www.tiktok.com/explore">
+            <img src="image/tik-tok.png">
+        </a>
+    </div>
+ </footer>
+ </body>   
+
+ </html>

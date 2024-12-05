@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hotel Room Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  
+    <style>
+       
+
+        section {
+            background-color: rgb(255, 255, 255);
+        }
+
+        body {
+            background-image: url(image/background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .booking-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            color: #fff;
+        }
+
+        .booking-text {
+            width: 45%;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .booking-text h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #8bc34a;
+            text-transform: uppercase;
+        }
+
+        .booking-text h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .booking-text p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #8bc34a;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .booking-form {
+            width: 45%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            color: #333;
+        }
+
+        .booking-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button.primary {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+      
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+        text-align: left;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    table thead {
+        background-color: #8bc34a;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    table thead th {
+        padding: 15px;
+    }
+
+    table tbody tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+    table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    table tbody tr:last-child {
+        border-bottom: none;
+    }
+
+    table tbody td {
+        padding: 12px;
+        color: #333;
+    }
+
+    table tbody tr:hover {
+        background-color: #eaf7ea;
+    }
+
+    /* For smaller screens */
+    @media (max-width: 768px) {
+        table thead {
+            display: none;
+        }
+
+        table tr {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        table td {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 14px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table td::before {
+            content: attr(data-label);
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #8bc34a;
+        }
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <img src="image/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="menu.html">Dining</a></li>
+                <li>
+                    <a href="index.html">Rooms</a>
+                    <div class="dropdown">
+                        <a href="room.html">Single Room</a>
+                        <a href="room.html#Double">Double Room</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Contact & Support</a>
+                    <div class="drop">
+                        <a href="about.html">About Us</a>
+                        <a href="location.html">Location and Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Room Details</h2>
+            <p>Below is the list of available rooms and their details:</p>
+            <br>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Room Code</th>
+                        <th>Type</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Single Room</td>
+                        <td>$149</td>
+                        <td>🟩 Open</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Single Room</td>
+                        <td>$179</td>
+                        <td>🟥 Closed</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Single Room</td>
+                        <td>$249</td>
+                        <td>🟩 Open</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Single Room</td>
+                        <td>$180</td>
+                        <td>🟩 Open</td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>Single Room</td>
+                        <td>$159</td>
+                        <td>🟥 Closed</td>
+                    </tr>
+                    <tr>
+                        <td>106</td>
+                        <td>Single Room</td>
+                        <td>$249</td>
+                        <td>🟥 Closed</td>
+                    </tr>
+                    <tr>
+                        <td>107</td>
+                        <td>Single Room</td>
+                        <td>$350</td>
+                        <td>🟩 Open</td>
+                    </tr>
+                    <tr>
+                        <td>108</td>
+                        <td>Single Room</td>
+                        <td>$449</td>
+                        <td>🟥 Closed</td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td>115</td>
+                            <td>Double Room</td>
+                            <td>$510</td>
+                            <td>🟥 Closed</td>
+                        </tr>
+                        <tr>
+                            <td>115</td>
+                            <td>Double Room</td>
+                            <td>$410</td>
+                            <td>🟥 Closed</td>
+                        </tr>
+                        <tr>
+                            <td>115</td>
+                            <td>Double Room</td>
+                            <td>$310</td>
+                            <td>🟥 Closed</td>
+                        </tr>
+                        <tr>
+                            <td>115</td>
+                            <td>Double Room</td>
+                            <td>$489</td>
+                            <td>🟥 Closed</td>
+                        </tr>
+                        <tr>
+                            <td>115</td>
+                            <td>Double Room</td>
+                            <td>$410</td>
+                            <td>🟥 Closed</td>
+                        </tr>
+                        <tr>
+                            <td>115</td>
+                            <td>Double Room</td>
+                            <td>$399</td>
+                            <td>🟥 Closed</td>
+                        </tr>
+                        <tr>
+                            <td>115</td>
+                            <td>Double Room</td>
+                            <td>$540</td>
+                            <td>🟥 Closed</td>
+                        </tr>
+                        <tr>
+                            <td>115</td>
+                            <td>Double Room</td>
+                            <td>$499</td>
+                            <td>🟥 Closed</td>
+                        </tr>
+                        
+
+
+   
+                </tbody>
+            </table>    
+        </div>
+    </section>
+
+    <div class="booking-section">
+        <div class="booking-text">
+            <h4>Booking</h4>
+            <h1>Online Booking</h1>
+            <p>Plan Your Stay with Us!
+                Experience comfort and luxury at our hotel. Select your preferred room, choose your dates, and let us handle the rest. Whether you're traveling for business or leisure, Richard Hotels ensures your stay is memorable.
+                Book now to secure your spot and take advantage of our premium amenities!</p>
+            
+            
+        </div>
+        <div class="booking-form">
+            <h2>Book A Room</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="datetime-local" required>
+                    <select>
+                        <option value="101">101</option>
+                        <option value="102">102</option>
+                        <option value="103">103</option>
+                        <option value="104">104</option>
+                        <option value="105">105</option>
+                        <option value="106">106</option>
+                        <option value="107">107</option>
+                        <option value="108">108</option>
+                        <option value="109">109</option>
+                        <option value="110">110</option>
+                        <option value="111">111</option>
+                        <option value="112">112</option>
+                        <option value="113">113</option>
+                        <option value="114">114</option>
+                        <option value="115">115</option>
+                        <option value="116">116</option>
+                    </select>
+                </div>
+                <textarea placeholder="Special Request" rows="4"></textarea>
+                <button type="submit" class="btn primary">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Richard Hotels. All rights reserved.</p>
+        <p>Follow us on social media</p>
+        <div class="social">
+            <a href="https://www.instagram.com/">
+                <img src="image/insta.png" style="width:42px;height:42px;">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="image/facebook (1).png" style="width:42px;height:42px; border-radius: 50%;">
+            </a>
+            <a href="https://x.com/__x">
+                <img src="image/twitter.png" style="width:42px;height:42px; border-radius: 50%;">
+            </a>
+            <a href="https://www.tiktok.com/explore">
+                <img src="image/tik-tok.png" style="width:42px;height:42px; border-radius: 50%;">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

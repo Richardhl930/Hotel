@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+    
+        section {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.7);
+            font-weight: bold;
+            padding: 20px;
+        }
+        h2 {
+            color: #ff6347;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                text-align: center;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            header {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .im img {
+                width: 90%;
+                max-width: 300px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+         <img src="image/logo.png"  alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="menu.html">Dining</a></li>
+                <li>
+                    <a href="index.html">Rooms</a>
+                    <div class="dropdown">
+                        <a href="room.html">Single Room</a>
+                        <a href="room.html#Double">Double room</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" style="color: #ff6347;">Contact & Support</a>
+                    <div class="drop">
+                        <a href="about.html">About us</a>
+                        <a href="location.html">Location and contact</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <h2>Welcome to Richard Hotels</h2>
+            <p>Welcome to Richard Hotels – a haven of luxury, comfort, and unforgettable experiences.
+
+                Nestled in prime locations, Richard Hotels is more than just a place to stay – it’s where exceptional hospitality meets timeless elegance. Our commitment to excellence ensures every guest enjoys a seamless blend of modern amenities and personalized service, creating a sanctuary for relaxation and adventure alike.</p>
+            <h2>Mission</h2>
+            <p>Our mission is simple: to make every guest feel at home while introducing them to the charm and hospitality of [mention local area or culture]. We pride ourselves on providing a warm, welcoming environment where every detail is designed to elevate your stay.</p>
+            <h2>Our Team</h2>
+            <p>At Richard Hotels, our team is our greatest asset. Comprising dedicated professionals from diverse backgrounds, we work together to provide exceptional service and create memorable experiences for our guests. Every team member, from front desk staff to management, shares a commitment to excellence, hospitality, and making your stay extraordinary. We are here to anticipate your needs, ensure your comfort, and go above and beyond to exceed your expectations.</p>
+            <h2>Join Us</h2> 
+            <p>Experience the warmth and elegance of Richard Hotels. We are honored to be a part of your journey, and we look forward to welcoming you soon. Whether it’s your first visit or one of many, we’re here to make you feel at home.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Richard Hotels. All rights reserved.</p>
+        <p>Follow us on social media</p>
+        <div class="social">
+            <a href="https://www.instagram.com/">
+                <img src="image/insta.png" >
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="image/facebook (1).png" >
+            </a>
+            <a href="https://x.com/__x">
+                <img src="image/twitter.png" >
+            </a>
+            <a href="https://www.tiktok.com/explore">
+                <img src="image/tik-tok.png" >
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/background.jpg');
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 20px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header img {
+    width: 200px;
+    height: auto;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    position: relative; 
+}
+
+.header nav a {
+  
+    font-size: 18px; /* Adjust to your preference */
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.header nav a:hover {
+    color: #ff6347;
+}
+
+.dropdown, .drop {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdown a, .drop a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown a:hover, .drop a:hover {
+    background-color: #ff6347;
+}
+
+.header nav ul li:hover .dropdown,
+.header nav ul li:hover .drop {
+    display: block;
+}
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.social img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+ /* Responsive Styles */
+ @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header img {
+        width: 150px;
+        height: auto;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .header nav a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .text button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
